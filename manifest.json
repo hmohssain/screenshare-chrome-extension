@@ -1,17 +1,18 @@
 {
     "name" : "BigBlueButton Screenshare Extension",
-    "author": "Alghad Colleges",
+    "author": "BigBlueButton",
     "version" : "0.0.6",
     "manifest_version" : 2,
     "minimum_chrome_version": "34",
     "description" : "Chrome Extension granting WebRTC screen capturing capabilities to BigBlueButton meetings.",
-    "homepage_url": "https://vclass.gc.edu.sa/",
+    "homepage_url": "https://elearning.gc.edu.sa/",
     "background": {
         "scripts": ["background-script.js"],
         "persistent": true
     },
     "externally_connectable": {
        "matches": [
+           "*://*.bigbluebutton.org/*",
            "*://*.vclass.gc.edu.sa/*"
          ]
     },
